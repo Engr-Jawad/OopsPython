@@ -1,4 +1,13 @@
+""" ist the static method is called decorators and decorators are those function which are on the class level not on the object level or decorators are those functions or methods which donot take a self parameter and it take functions as a parameter and output of the decorators is also a function
+"decorators alllows us to wrap another function in order to extend the behaviour of the wrapped function,without permanently modifying it"
+
+"""
+
 class student:
+    # static method
+    @staticmethod  # decorators
+    def welcome():
+        print("welcome to the college")
     # this is a class attribute and store for all object in the same memory
     college_name="gdc buner"
     # the below function is a parametarized constructor
@@ -8,31 +17,10 @@ class student:
         self.name=name
         self.marks=marks
         self.rollno=rollno
-        self.address=address
+        self.address=address 
         # the function in the class is called method or member function
     def show_student_data(self):
         return f"student name : {self.name} student marks : {self.marks} student rollno : {self.rollno} student address : {self.address}"
     # get marks method
     def get_marks(self):
         return self.marks
-#88888888888888888888888888888888888888888888888888888888888888888888888 
-        
-class std:
-    def __init__(self,name,marks):
-        self.name=name
-        self.marks=marks
-        
-    def get_average(self):
-        sum=0
-        for  value in self.marks:
-            sum+=value
-        print("your averge score is equal to : ",sum/3)
-        
-ss=std("jawad ali",[89,98,99])
-print(ss.get_average())
-            
-       
-s1=student("jawad ali",56,34,"kalpani")  #the paranthesis after the student is calling the init function or calling the constructor
-print(s1.get_marks())
-print(s1.show_student_data())
-
