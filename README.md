@@ -12,7 +12,8 @@ Understand OOP concepts clearly
 Practice writing class-based code
 Learn real-world usage of OOP in Python
 Strengthen coding and design skills
-🧩 OOP Concepts Covered
+
+# 🧩 OOP Concepts Covered
 🔹 Classes & Objects
 🔹 Constructors (__init__)
 🔹 Encapsulation
